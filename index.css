@@ -74,7 +74,7 @@ section li {
   margin: 15px 0px 0px 20px;
 }
 
-box {
+code {
   display: block;
   text-align: left;
   white-space: pre-line;
