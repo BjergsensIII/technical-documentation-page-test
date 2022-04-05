@@ -20,10 +20,10 @@ body {
 }
 
 header {
-  color: black;
+  color: rgb(146, 117, 0);
   margin: 10px;
   text-align: center;
-  font-size: 1.8em;
+  font-size: 30px;
   font-weight: thin;
 }
 
@@ -40,11 +40,13 @@ header {
 }
 
 #navbar li {
-  color: #4d4e53;
-  border-top: 1px solid;
+  color: rgb(144, 115, 0);
+  border-bottom: 1px solid;
   list-style: none;
   position: relative;
   width: 100%;
+  font-size: 15px;
+  font-style: italic;
 }
 
 #navbar a {
@@ -57,9 +59,9 @@ header {
 
 #main-doc {
   position: absolute;
-  margin-left: 310px;
+  margin-left: 350px;
   padding: 20px;
-  margin-bottom: 110px;
+  margin-bottom: 350px;
 }
 
 section article {
@@ -87,6 +89,17 @@ box {
   border-radius: 20px;
 }
 
+.tbox {
+  display: block;
+  text-align: center;
+  width: 500px;
+  border: 1px solid black;
+  background-color: rgba(211, 211, 211, 0.426);
+  padding: 10px;
+  margin: 0px;
+}
+
+
 @media only screen and (max-width: 815px) {
   /* For mobile phones: */
   #navbar ul {
@@ -95,7 +108,7 @@ box {
   }
 
   #navbar {
-    background-color: white;
+    background-color: black;
     position: absolute;
     top: 0;
     padding: 0;
