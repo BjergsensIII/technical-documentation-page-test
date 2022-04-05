@@ -34,25 +34,25 @@
         <header>JS Documentation</header>
 
         <ul>
-          <li><a class="nav-link" href="#Introduction">Introduction</a></li>
-          <li><a class="nav-link" href="#What_you_should_already_know">What you should already know</a></li>
-          <li><a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a></li>
-          <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
-          <li><a class="nav-link" href="#Variables">Variables</a></li>
-          <li><a class="nav-link" href="#Declaring_variables">Declaring variables</a></li>
-          <li><a class="nav-link" href="#Variable_scope">Variable scope</a></li>
-          <li><a class="nav-link" href="#Global_variables">Global variables</a></li>
-          <li><a class="nav-link" href="#Constants">Constants</a></li>
-          <li><a class="nav-link" href="#Data_types">Data types</a></li>
-          <li><a class="nav-link" href="#if...else_statement">if...else statement</a></li>
-          <li><a class="nav-link" href="#while_statement">while statement</a></li>
-          <li><a class="nav-link" href="#Function_declarations">Function declarations</a></li>
-          <li><a class="nav-link" href="#Reference">Reference</a></li>
+          <li><a class="nav-link" href="#•_Introduction">• Introduction</a></li>
+          <li><a class="nav-link" href="#•_What_you_should_already_know">• What you should already know</a></li>
+          <li><a class="nav-link" href="#•_JavaScript_and_Java">• JavaScript and Java</a></li>
+          <li><a class="nav-link" href="#•_Hello_world">• Hello world</a></li>
+          <li><a class="nav-link" href="#•_Variables">• Variables</a></li>
+          <li><a class="nav-link" href="#•_Declaring_variables">• Declaring variables</a></li>
+          <li><a class="nav-link" href="#•_Variable_scope">• Variable scope</a></li>
+          <li><a class="nav-link" href="#•_Global_variables">• Global variables</a></li>
+          <li><a class="nav-link" href="#•_Constants">• Constants</a></li>
+          <li><a class="nav-link" href="#•_Data_types">• Data types</a></li>
+          <li><a class="nav-link" href="#•_if...else_statement">• if...else statement</a></li>
+          <li><a class="nav-link" href="#•_while_statement">• while statement</a></li>
+          <li><a class="nav-link" href="#•_Function_declarations">• Function declarations</a></li>
+          <li><a class="nav-link" href="#•_Reference">• Reference</a></li>
         </ul>
 
       </nav>
       <main id="main-doc">
-        <section class="main-section" id="Introduction">
+        <section class="main-section" id="•_Introduction">
           <header class="tbox">• Introduction</header>
           <article>
             <p>
@@ -87,7 +87,7 @@
             </ul>
           </article>
         </section>
-        <section class="main-section" id="What_you_should_already_know">
+        <section class="main-section" id="•_What_you_should_already_know">
           <header class="tbox">• What you should already know</header>
           <article>
             <p>This guide assumes you have the following basic background:</p>
@@ -104,7 +104,7 @@
             </ul>
           </article>
         </section>
-        <section class="main-section" id="JavaScript_and_Java">
+        <section class="main-section" id="•_JavaScript_and_Java">
           <header class="tbox">• JavaScript and Java</header>
           <article>
             <p>
@@ -136,21 +136,21 @@
             </p>
           </article>
         </section>
-        <section class="main-section" id="Hello_world">
+        <section class="main-section" id="•_Hello_world">
           <header class="tbox">• Hello world</header>
           <article>
             To get started with writing JavaScript, open the Scratchpad and write your
             first "Hello world" JavaScript code:
-            <box
+            <code
               >function greetMe(yourName) { alert("Hello " + yourName); }
               greetMe("World");
-            </box>
+            </code>
       
             Select the code in the pad and hit Ctrl+R to watch it unfold in your
             browser!
           </article>
         </section>
-        <section class="main-section" id="Variables">
+        <section class="main-section" id="•_Variables">
           <header class="tbox">• Variables</header>
           <p>
             You use variables as symbolic names for values in your application. The
@@ -169,27 +169,27 @@
             _name.
           </p>
         </section>
-        <section class="main-section" id="Declaring_variables">
+        <section class="main-section" id="•_Declaring_variables">
           <header class="tbox">• Declaring variables</header>
           <article>
             You can declare a variable in three ways:
             <p>
-              With the keyword var. For example, <box>var x = 42.</box> This syntax
+              With the keyword var. For example, <code>var x = 42.</code> This syntax
               can be used to declare both local and global variables.
             </p>
             <p>
-              By simply assigning it a value. For example, <box>x = 42.</box> This
+              By simply assigning it a value. For example, <code>x = 42.</code> This
               always declares a global variable. It generates a strict JavaScript
               warning. You shouldn't use this variant.
             </p>
             <p>
-              With the keyword let. For example,<box> let y = 13.</box> This syntax
+              With the keyword let. For example,<code> let y = 13.</code> This syntax
               can be used to declare a block scope local variable. See Variable scope
               below.
             </p>
           </article>
         </section>
-        <section class="main-section" id="Variable_scope">
+        <section class="main-section" id="•_Variable_scope">
           <header class="tbox">• Variable scope</header>
           <article>
             <p>
@@ -208,19 +208,19 @@
               context) within which x is declared, not the block, which in this case
               is an if statement.
             </p>
-            <box>if (true) { var x = 5; } console.log(x); // 5</box>
+            <code>if (true) { var x = 5; } console.log(x); // 5</code>
             <p>
               This behavior changes, when using the let declaration introduced in
               ECMAScript 2015.
             </p>
       
-            <box
+            <code
               >if (true) { let y = 5; } console.log(y); // ReferenceError: y is not
               defined
-            </box>
+            </code>
           </article>
         </section>
-        <section class="main-section" id="Global_variables">
+        <section class="main-section" id="•_Global_variables">
           <header class="tbox">• Global variables</header>
           <article>
             <p>
@@ -238,7 +238,7 @@
             </p>
           </article>
         </section>
-        <section class="main-section" id="Constants">
+        <section class="main-section" id="•_Constants">
           <header class="tbox">• Constants</header>
           <article>
             <p>
@@ -248,7 +248,7 @@
               can contain alphabetic, numeric, or underscore characters.
             </p>
       
-            <box>const PI = 3.14;</box>
+            <code>const PI = 3.14;</code>
             <p>
               A constant cannot change value through assignment or be re-declared
               while the script is running. It has to be initialized to a value.
@@ -265,19 +265,19 @@
               variable in the same scope. For example:
             </p>
       
-            <box
+            <code
               >// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS WILL
               CAUSE AN ERROR ALSO function f() { const g = 5; var g; //statements
-              }</box
+              }</code
             >
             However, object attributes are not protected, so the following statement
             is executed without problems.
-            <box
-              >const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";</box
+            <code
+              >const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";</code
             >
           </article>
         </section>
-        <section class="main-section" id="Data_types">
+        <section class="main-section" id="•_Data_types">
           <header class="tbox">• Data types</header>
           <article>
             <p>The latest ECMAScript standard defines seven data types:</p>
@@ -310,14 +310,14 @@
             your application can perform.
           </article>
         </section>
-        <section class="main-section" id="if...else_statement">
+        <section class="main-section" id="•_if...else_statement">
           <header class="tbox">• if...else statement</header>
           <article>
             Use the if statement to execute a statement if a logical condition is
             true. Use the optional else clause to execute a statement if the condition
             is false. An if statement looks as follows:
       
-            <box>if (condition) { statement_1; } else { statement_2; }</box>
+            <code>if (condition) { statement_1; } else { statement_2; }</code>
             condition can be any expression that evaluates to true or false. See
             Boolean for an explanation of what evaluates to true and false. If
             condition evaluates to true, statement_1 is executed; otherwise,
@@ -327,38 +327,38 @@
               You may also compound the statements using else if to have multiple
               conditions tested in sequence, as follows:
             </p>
-            <box
+            <code
               >if (condition_1) { statement_1; } else if (condition_2) { statement_2;
               } else if (condition_n) { statement_n; } else { statement_last; }
-            </box>
+            </code>
             In the case of multiple conditions only the first logical condition which
             evaluates to true will be executed. To execute multiple statements, group
             them within a block statement ({ ... }) . In general, it's good practice
             to always use block statements, especially when nesting if statements:
       
-            <box
+            <code
               >if (condition) { statement_1_runs_if_condition_is_true;
               statement_2_runs_if_condition_is_true; } else {
               statement_3_runs_if_condition_is_false;
-              statement_4_runs_if_condition_is_false; }</box
+              statement_4_runs_if_condition_is_false; }</code
             >
             It is advisable to not use simple assignments in a conditional expression,
             because the assignment can be confused with equality when glancing over
             the code. For example, do not use the following code:
-            <box>if (x = y) { /* statements here */ }</box> If you need to use an
+            <code>if (x = y) { /* statements here */ }</code> If you need to use an
             assignment in a conditional expression, a common practice is to put
             additional parentheses around the assignment. For example:
       
-            <box>if ((x = y)) { /* statements here */ }</box>
+            <code>if ((x = y)) { /* statements here */ }</code>
           </article>
         </section>
-        <section class="main-section" id="while_statement">
+        <section class="main-section" id="•_while_statement">
           <header class="tbox">• while statement</header>
           <article>
             A while statement executes its statements as long as a specified condition
             evaluates to true. A while statement looks as follows:
       
-            <box>while (condition) statement</box> If the condition becomes false,
+            <code>while (condition) statement</code> If the condition becomes false,
             statement within the loop stops executing and control passes to the
             statement following the loop.
       
@@ -378,7 +378,7 @@
       
             <p>The following while loop iterates as long as n is less than three:</p>
       
-            <box>var n = 0; var x = 0; while (n &lt; 3) { n++; x += n; }</box>
+            <code>var n = 0; var x = 0; while (n &lt; 3) { n++; x += n; }</code>
             <p>
               With each iteration, the loop increments n and adds that value to x.
               Therefore, x and n take on the following values:
@@ -395,7 +395,7 @@
             </p>
           </article>
         </section>
-        <section class="main-section" id="Function_declarations">
+        <section class="main-section" id="•_Function_declarations">
           <header class="tbox">• Function declarations</header>
           <article>
             A function definition (also called a function declaration, or function
@@ -416,14 +416,14 @@
               For example, the following code defines a simple function named square:
             </p>
       
-            <box>function square(number) { return number * number; }</box>
+            <code>function square(number) { return number * number; }</code>
             <p>
               The function square takes one argument, called number. The function
               consists of one statement that says to return the argument of the
               function (that is, number) multiplied by itself. The return statement
               specifies the value returned by the function.
             </p>
-            <box>return number * number;</box>
+            <code>return number * number;</code>
             <p>
               Primitive parameters (such as a number) are passed to functions by
               value; the value is passed to the function, but if the function changes
@@ -432,7 +432,7 @@
             </p>
           </article>
         </section>
-        <section class="main-section" id="Reference">
+        <section class="main-section" id="•_Reference">
           <header class="tbox">• Reference</header>
           <article>
             <ul>
